@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Merriweather', serif;
-  background-color: #f9fafc;
+  background-color: #ebf2ff;
 }
 
  .navbar {
@@ -33,24 +33,111 @@ body {
      );
      color: #fff;
      border: none;
-     padding: 10px;
+     padding: 8px;
      border-radius: 4px;
      font-weight: bold;
  }
 
  .nav__items:hover {
    background-position: right center;
-   border: 5px solid #D71313;
+   border: 5px solid #99B080;
    cursor: pointer;
  }
 
+ .container {
+   padding: 20px
+ }
+
+ .hero__container__image {
+   width: 250px;
+ }
+ .hero__image {
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: 0px 20px 50px -10px rgb(0 0 0 /25%) ;
+ }
+
+ .hero__text {
+   font-weight: 800;
+   font-size: 30px;
+   margin: 20px;
+   color: #1d3557;
+ }
+
  @media (min-width: 768px) {
+   .explore__menu__lists {
+     display: flex;
+     gap : 30px;
+     padding: 0 30px
+   }
+
+   .explore__menu__container{
+     position: relative;
+   }
+
+   .explore__menu__gradient__bg{
+     position: absolute;
+     top: 0;
+     bottom: 0;
+
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(
+       to right,
+       #D83F31 0%,
+       #D80032 50%,
+       #E55604 100%
+
+       );
+       z-index: -3;
+       transform: skewY(-5deg);
+   }
+
    .nav__brand{
      justify-content: space-between;
      padding: 10px 10px;
    }
 
+   .hero__container {
+   display : flex;
+   flex-direction: row-reverse;
+   align-items: center;
  }
+
+
+
+
+ }
+
+ .explore__menu__container {
+   width: 100%;
+ }
+
+ .explore__menu__text {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-weight: bolder;
+   font-size: 50px;
+ }
+
+ .food__card__image__container {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+ }
+
+ .food__image {
+   width: 100%;
+   border-radius: 20px 20px 0 0;
+ }
+
+ .food__card__description {
+   background-color: #FFDFDF;
+   width: 95%;
+   padding: 10px;
+ }
+
+
 
  @media (min-width :1024px) {
    .navbar__logo{
@@ -61,4 +148,10 @@ body {
 font-size: 20px;
 
    }
+
+   .hero__text{
+     font-size: 40px
+   }
+
+
  }
